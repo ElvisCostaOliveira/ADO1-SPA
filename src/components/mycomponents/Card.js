@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from './Image';
-import '../../App.css'
 
-const CardWrapper = styled.div`
+const CardComponet = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
@@ -24,11 +23,11 @@ const CardDescription = styled.p`
 
 const Card = ({ title, description, imageUrl }) => {
   return (
-    <CardWrapper>
+    <CardComponet>
       <Image src={imageUrl} alt={title} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
-    </CardWrapper>
+    </CardComponet>
   );
 };
 

@@ -1,5 +1,3 @@
-// src/components/Home.js
-
 import React from 'react';
 import Title from './mycomponents/Title';
 import Description from './mycomponents/Description';

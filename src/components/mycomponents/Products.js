@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
-import '../../App.css'
 
-const ProductsWrapper = styled.div`
+const ProductsComponet = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,7 +10,7 @@ const ProductsWrapper = styled.div`
 
 const Products = ({ products }) => {
   return (
-    <ProductsWrapper>
+    <ProductsComponet>
       {products.map(product => (
         <Card 
           key={product.id} 
@@ -20,7 +19,7 @@ const Products = ({ products }) => {
           imageUrl={product.imageUrl} 
         />
       ))}
-    </ProductsWrapper>
+    </ProductsComponet>
   );
 };
 
